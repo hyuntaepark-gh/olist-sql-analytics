@@ -123,14 +123,15 @@ Delay buckets:
 - 8–14 days
 - 15+ days
 
-Key findings:
-- Orders delayed **15+ days** show a strong concentration of **1–2 star reviews**
-- Even moderate delays (4–7 days) correlate with lower customer satisfaction
-- On-time or near-on-time deliveries maintain significantly higher review scores
+## ⭐ Key Findings
+- Delivery delays show a threshold effect: orders delayed **15+ days** are heavily associated with **1-star reviews**.
+- Even moderate delays (**4–7 days**) correlate with a noticeable drop in review scores.
+- Order lifecycle coverage across tables is high, enabling reliable funnel and retention analysis.
 
 This analysis highlights how **operational performance directly impacts customer experience**.
 
 📁 SQL file: `sql/40_delivery_delay_reviews.sql`
+![Delay vs Review Score](docs/screenshots/delay_bucket_vs_review_score.png)
 
 ---
 
