@@ -1,23 +1,31 @@
 # Olist SQL Analytics Project
 
 End-to-end SQL analytics project using the **Olist Brazilian E-commerce dataset**.  
-This project demonstrates **advanced SQL analytics skills** by transforming raw transactional data into **business-ready insights**.
+This project demonstrates **advanced SQL analytics skills** by transforming raw transactional data into **actionable business insights**.
 
-Rather than focusing on simple queries, this project emphasizes **business-oriented analysis**, answering real-world questions such as:
+Rather than focusing on isolated queries, the project emphasizes **decision-oriented analysis**, answering practical business questions such as:
 - Where do customers drop off in the order lifecycle?
 - How does delivery performance impact customer satisfaction?
 - How well does the business retain customers over time?
 
 ---
 
+## ⭐ Key Findings (Highlights)
+
+- Orders delayed **15+ days** are overwhelmingly associated with **1–2 star reviews**, indicating a sharp increase in customer dissatisfaction.
+- Even moderate delivery delays (**4–7 days**) correlate with noticeably lower review scores compared to near-on-time deliveries.
+- Funnel analysis shows **high data coverage across tables**, enabling reliable lifecycle and retention analysis.
+
+---
+
 ## 📌 Project Overview
 
-The goal of this project is to showcase **production-style SQL analytics** skills:
+The goal of this project is to showcase **production-style SQL analytics**:
 
 - Designing a relational data model from raw CSV files  
 - Building analysis-ready tables using SQL (CTEs, joins, window functions)  
 - Performing KPI, funnel, cohort, and operational impact analysis  
-- Translating query results into **actionable business insights**
+- Translating query results into **business-relevant insights**
 
 This repository is structured as a **portfolio project for Data Analyst / Business Analytics roles**, with SQL as the primary analytical tool.
 
@@ -92,7 +100,7 @@ Funnel steps:
 Key insights:
 - Step-to-step conversion rates
 - Drop-off points across the order lifecycle
-- Data coverage validation across related tables
+- Coverage validation across related tables
 
 📁 SQL file: `sql/20_funnel_orders.sql`
 
@@ -110,7 +118,7 @@ Customer retention is analyzed using **monthly cohorts** based on the first purc
 
 ---
 
-### 4. Delivery Delay Impact on Customer Satisfaction ⭐
+### 4. Delivery Delay Impact on Customer Satisfaction
 
 This analysis evaluates how **delivery delays affect customer review scores**.
 
@@ -123,15 +131,15 @@ Delay buckets:
 - 8–14 days
 - 15+ days
 
-## ⭐ Key Findings
-- Delivery delays show a threshold effect: orders delayed **15+ days** are heavily associated with **1-star reviews**.
-- Even moderate delays (**4–7 days**) correlate with a noticeable drop in review scores.
-- Order lifecycle coverage across tables is high, enabling reliable funnel and retention analysis.
+Key findings:
+- Orders delayed **15+ days** are strongly associated with **1–2 star reviews**
+- Customer satisfaction declines noticeably after delays exceed **7 days**
+- Delivery delay duration, not delay occurrence, is the key dissatisfaction driver
 
-This analysis highlights how **operational performance directly impacts customer experience**.
+This highlights delivery performance as a **critical operational KPI directly
+linked to customer experience**.
 
 📁 SQL file: `sql/40_delivery_delay_reviews.sql`
-![Delay vs Review Score](docs/screenshots/delay_bucket_vs_review_score.png)
 
 ---
 
@@ -140,7 +148,7 @@ This analysis highlights how **operational performance directly impacts customer
 - Common Table Expressions (CTEs)
 - Window functions (`ROW_NUMBER`, `LAG`, `SUM OVER`)
 - Multi-table joins
-- Date and time interval calculations
+- Date and interval calculations
 - Aggregation and cohort modeling
 
 ---
@@ -185,7 +193,7 @@ olist-sql-analytics/
 ## 🚀 Future Improvements
 
 - Customer Lifetime Value (LTV) analysis
-- Regional and product category segmentation
+- Product category and regional segmentation
 - Performance optimization using indexing
 - Visualization layer using a BI tool (Tableau / Power BI)
 
