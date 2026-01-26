@@ -8,13 +8,12 @@ Business implication:
 - Prioritize intervention for orders delayed beyond 7 days
 - Set SLA thresholds to prevent extreme delays
 
-## KPI Summary
+### Core Business KPIs (Delivered Orders)
 
 ![KPI Summary](kpi_summary.png)
 
-- Total Orders: 96,478
-- Unique Customers: 93,358
-- AOV: 137.04
-- Revenue per Customer: 141.62
-
-This KPI snapshot summarizes delivered-order performance across the platform.
+- Total Orders: 96,478  
+- Unique Customers: 93,358  
+- Total Revenue: R$1.32M  
+- Average Order Value (AOV): R$137.04  
+- Revenue per Customer: R$141.62
