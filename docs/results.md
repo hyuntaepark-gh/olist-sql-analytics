@@ -10,7 +10,7 @@ Business implication:
 
 ### Core Business KPIs (Delivered Orders)
 
-![KPI Summary](kpi_summary.png)
+![KPI Summary](KPI_Summary.png)
 
 - Total Orders: 96,478  
 - Unique Customers: 93,358  
