@@ -46,7 +46,7 @@ The following KPIs summarize overall business performance for **successfully del
 
 To ensure analytical reliability, order coverage across key transactional tables was validated.
 
-![Order Coverage Check](Order_Coverage_Check.png)
+![Order Coverage Check](Funnel_Order_Coverage_Check.png)
 
 ### Validation Result
 - Over **99% of orders** have corresponding:
