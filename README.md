@@ -123,15 +123,6 @@ This project demonstrates how SQL can be used not only for querying data,
 but for **driving business decisions** through structured analysis,  
 clear KPIs, and actionable insights.
 
-```
-sql/
-├── 00_setup.sql
-├── 10_kpi.sql
-├── 20_order_lifecycle_funnel.sql
-├── 30_cohort_retention.sql
-└── 40_delivery_delay_analysis.sql
-
----
 
 ## 📁 Repository Structure
 
@@ -152,5 +143,12 @@ olist-sql-analytics/
 │ ├─ erd.png
 │ ├─ assumptions.md
 │ └─ results.md
+
+sql/
+├── 00_setup.sql
+├── 10_kpi.sql
+├── 20_order_lifecycle_funnel.sql
+├── 30_cohort_retention.sql
+└── 40_delivery_delay_analysis.sql
 
 ```
