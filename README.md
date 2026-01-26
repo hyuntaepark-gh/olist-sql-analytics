@@ -131,14 +131,14 @@ clear KPIs, and actionable insights.
 olist-sql-analytics/
 ├─ README.md
 ├─ sql/
-│ ├─ 00_setup.sql
-│ ├─ 01_staging.sql
-│ ├─ 02_marts.sql
-│ ├─ 10_kpi.sql
-│ ├─ 20_funnel_orders.sql
-│ ├─ 30_cohort_retention.sql
-│ ├─ 40_delivery_delay_reviews.sql
-│ └─ 99_tests.sql
+│  ├─ 00_setup.sql
+│  ├─ 01_staging.sql
+│  ├─ 02_marts.sql
+│  ├─ 10_kpi.sql
+│  ├─ 20_funnel_orders.sql
+│  ├─ 30_cohort_retention.sql
+│  ├─ 40_delivery_delay_reviews.sql
+│  └─ 99_tests.sql
 ├─ docs/
 │ ├─ erd.png
 │ ├─ assumptions.md
