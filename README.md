@@ -130,6 +130,10 @@ clear KPIs, and actionable insights.
 
 olist-sql-analytics/
 ├─ README.md
+├─ data/
+│  ├─ raw/                # dataset files go here (ignored by Git)
+│  ├─ processed/          # optional processed data (ignored by Git)
+│  └─ .gitignore
 ├─ sql/
 │  ├─ 00_setup.sql
 │  ├─ 01_staging.sql
@@ -139,9 +143,16 @@ olist-sql-analytics/
 │  ├─ 30_cohort_retention.sql
 │  ├─ 40_delivery_delay_reviews.sql
 │  └─ 99_tests.sql
-├─ docs/
-│ ├─ erd.png
-│ ├─ assumptions.md
-│ └─ results.md
+└─ docs/
+   ├─ assumptions.md
+   ├─ results.md
+   ├─ schema/
+   │  └─ erd_olist_schema.png
+   └─ figures/
+      ├─ kpi_summary.png
+      ├─ funnel_order_coverage_check.png
+      ├─ cohort_retention_matrix.png
+      ├─ delivery_delay_bucket_definition.png
+      └─ delivery_delay_vs_review_score.png
 
 ```
