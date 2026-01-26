@@ -48,18 +48,16 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ## 🧱 Data Model (ERD)
 
-The dataset follows a normalized relational structure centered around customer orders.
+The database follows a normalized relational schema centered around the `orders` table.
 
-Main tables:
-- `customers`
-- `orders`
-- `order_items`
-- `order_payments`
-- `order_reviews`
-- `products`
-- `product_category_name_translation`
+- Customers place multiple orders
+- Each order can have multiple items, payments, and reviews
+- Items are linked to both products and sellers
+- Product categories are translated via a lookup table
 
-📌 ERD diagram: `docs/erd.png`
+This structure supports order-level KPI analysis, customer behavior analysis, and seller/product performance evaluation.
+
+![ERD](docs/erd_olist_schema.png)
 
 ---
 
