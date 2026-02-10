@@ -1,13 +1,19 @@
 # 📦 Olist SQL Analytics – End-to-End Business Analysis
 
-This project analyzes the **Brazilian Olist e-commerce dataset** using **PostgreSQL** to answer
-real-world business questions related to **revenue, customer behavior, delivery performance, and customer satisfaction**.
+This project analyzes the **Brazilian Olist e-commerce dataset** using **PostgreSQL**
+to answer real-world business questions related to **revenue, customer behavior,
+delivery performance, and customer satisfaction**.
 
 Rather than focusing on isolated SQL queries, this project emphasizes:
+
 - Business-oriented KPIs
-- Order lifecycle analysis
+- Order lifecycle and funnel analysis
 - Delivery delay impact on customer reviews
 - Cohort-based customer retention
+- Data validation and analytical traceability
+
+The goal is to demonstrate how **SQL-driven analytics translate directly into
+business decisions**, not just query outputs.
 
 ---
 
@@ -22,10 +28,18 @@ Rather than focusing on isolated SQL queries, this project emphasizes:
 
 ## 🗂️ Data Model (ERD)
 
-![ERD](docs/ERD_Olist_Schema.png)
+![ERD](docs/schema/ERD_Olist_Schema.png)
 
-The database follows a **relational schema** centered on the `orders` table,
-with supporting fact and dimension tables such as:
+The ERD above represents the **validated analytical data model**
+used throughout this project.
+
+All KPIs and downstream analyses are derived from this schema,
+ensuring full **traceability from raw transactional data
+to executive-level business insights**.
+
+The model is centered on the `orders` table, with supporting fact
+and dimension tables such as:
+
 - `customers`
 - `order_items`
 - `order_payments`
@@ -39,21 +53,26 @@ with supporting fact and dimension tables such as:
 
 ### 🚚 Delivery Delay vs Review Score
 
-![Delay](docs/Delay_Bucket_vs_Review_Score.png)
+![Delay](docs/figures/Delay_Bucket_vs_Review_Score.png)
 
 Orders delayed **more than 15 days** show a sharp increase in **1-star reviews**.
 This indicates that **delay duration**, not just delay occurrence,
 is the primary driver of customer dissatisfaction.
 
 **Business Implications**
-- Prioritize intervention for orders delayed beyond **7 days**
-- Set SLA thresholds to prevent extreme delivery delays
+- Prioritize operational intervention for orders delayed beyond **7 days**
+- Define SLA thresholds to prevent extreme delivery delays
+- Monitor delay buckets rather than binary on-time vs delayed metrics
 
 ---
 
-### 💰 Core Business KPIs (Delivered Orders)
+### 💰 Core Business KPIs (Delivered Orders Only)
 
-![KPI](docs/KPI_Summary.png)
+![KPI](docs/figures/KPI_Summary.png)
+
+These KPIs are calculated **exclusively on delivered orders**
+to reflect **realized revenue**, providing an executive-accurate
+view of business performance.
 
 | Metric | Value |
 |------|------|
@@ -67,34 +86,48 @@ is the primary driver of customer dissatisfaction.
 
 ### 📦 Order Coverage Validation
 
-![Coverage](docs/Order_Coverage_Check.png)
+![Coverage](docs/figures/Funnel_Order_Coverage_Check.png)
 
-This validation confirms that all delivered orders are consistently represented
-across `orders`, `order_items`, `order_payments`, and `order_reviews`,
-ensuring data integrity for downstream analysis.
+This validation confirms that all delivered orders are
+consistently represented across:
+
+- `orders`
+- `order_items`
+- `order_payments`
+- `order_reviews`
+
+Ensuring **data completeness and integrity**
+before proceeding to KPI calculation and behavioral analysis.
 
 ---
 
 ### 🔁 Customer Retention (Cohort Analysis)
 
-![Cohort](docs/Cohort_Retention_Matrix.png)
+![Cohort](docs/figures/Cohort_Retention_Matrix.png)
 
 Customer retention drops sharply after the first purchase,
-indicating that **repeat purchase is not a strong behavior pattern** in the dataset.
+indicating that **repeat purchasing is not a strong behavior pattern**
+in this dataset.
 
-This suggests opportunities for:
-- Post-purchase engagement
-- Loyalty programs
-- Targeted remarketing
+This cohort-based analysis provides a quantitative foundation for:
+
+- Post-purchase engagement strategies
+- Loyalty program design
+- Targeted remarketing initiatives
 
 ---
+
 ## 🛠️ SQL Structure & Approach
 
-Each SQL file includes:
+Each SQL file in this repository includes:
 
-- Clear business intent  
-- Step-by-step transformations  
-- Readable aliases and comments  
+- Clear business intent
+- Step-by-step transformations
+- Readable aliases and inline comments
+- Explicit filtering and validation logic
+
+The analysis follows a **progressive analytical flow**:
+from data setup → validation → KPI calculation → behavioral insights.
 
 ---
 
@@ -102,10 +135,10 @@ Each SQL file includes:
 
 - Advanced SQL (JOINs, CTEs, aggregation, window functions)
 - Business KPI design
-- Funnel & cohort analysis
-- Data validation & quality checks
+- Funnel and cohort analysis
+- Data validation and quality checks
 - Relational data modeling
-- Analytical storytelling
+- Analytical storytelling for decision-making
 
 ---
 
@@ -119,10 +152,15 @@ Each SQL file includes:
 
 ## 🚀 Why This Project Matters
 
-This project demonstrates how SQL can be used not only for querying data,  
-but for **driving business decisions** through structured analysis,  
-clear KPIs, and actionable insights.
+This project demonstrates how SQL can be used not only for querying data,
+but for **driving business decisions** through:
 
+- Clearly defined KPIs
+- Validated analytical foundations
+- Explainable performance drivers
+- Actionable insights aligned with operational and marketing strategy
+
+---
 
 ## 📁 Repository Structure
 
