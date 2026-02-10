@@ -169,28 +169,23 @@ but for **driving business decisions** through:
 olist-sql-analytics/
 ├─ README.md
 ├─ data/
-│  ├─ raw/                # dataset files go here (ignored by Git)
-│  ├─ processed/          # optional processed data (ignored by Git)
-│  └─ .gitignore
+│ ├─ raw/ # dataset files (ignored by Git)
+│ ├─ processed/ # optional processed data (ignored by Git)
+│ └─ .gitignore
 ├─ sql/
-│  ├─ 00_setup.sql
-│  ├─ 01_staging.sql
-│  ├─ 02_marts.sql
-│  ├─ 10_kpi.sql
-│  ├─ 20_funnel_orders.sql
-│  ├─ 30_cohort_retention.sql
-│  ├─ 40_delivery_delay_reviews.sql
-│  └─ 99_tests.sql
+│ ├─ 00_setup.sql
+│ ├─ 10_kpi.sql
+│ ├─ 20_order_lifecycle_funnel.sql
+│ ├─ 30_cohort_retention.sql
+│ └─ 40_delivery_delay_analysis.sql
 └─ docs/
-   ├─ assumptions.md
-   ├─ results.md
-   ├─ schema/
-   │  └─ erd_olist_schema.png
-   └─ figures/
-      ├─ kpi_summary.png
-      ├─ funnel_order_coverage_check.png
-      ├─ cohort_retention_matrix.png
-      ├─ delivery_delay_bucket_definition.png
-      └─ delivery_delay_vs_review_score.png
+├─ schema/
+│ └─ ERD_Olist_Schema.png
+└─ figures/
+├─ KPI_Summary.png
+├─ Funnel_Order_Coverage_Check.png
+├─ Cohort_Retention_Matrix.png
+├─ Delay_Bucket_Definition.png
+└─ Delay_Bucket_vs_Review_Score.png
 
 ```
