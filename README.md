@@ -1,5 +1,4 @@
-# 📦 Olist SQL Analytics – End-to-End Business Analysis
-
+# 📦 Olist SQL Analytics
 This project analyzes the **Brazilian Olist e-commerce dataset** using **PostgreSQL**
 to answer real-world business questions related to **revenue, customer behavior,
 delivery performance, and customer satisfaction**.
