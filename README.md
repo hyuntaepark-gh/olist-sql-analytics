@@ -1,4 +1,16 @@
 # 📦 Olist SQL Analytics
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Analytics%20DB-336791?logo=postgresql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Business%20Analytics-CC2927)
+![Data Analysis](https://img.shields.io/badge/Data-Analysis-0A66C2)
+![KPI](https://img.shields.io/badge/KPI-Design-FF6F00)
+![Cohort Analysis](https://img.shields.io/badge/Cohort-Retention-6A1B9A)
+![Funnel Analysis](https://img.shields.io/badge/Funnel-Lifecycle-1E88E5)
+![Customer Analytics](https://img.shields.io/badge/Customer-Behavior-00897B)
+![Operational Analytics](https://img.shields.io/badge/Operational-Insights-2E7D32)
+![Data Validation](https://img.shields.io/badge/Data-Validation-795548)
+![Decision Analytics](https://img.shields.io/badge/Decision-Analytics-FF7043)
+
 This project analyzes the **Brazilian Olist e-commerce dataset** using **PostgreSQL**
 to answer real-world business questions related to **revenue, customer behavior,
 delivery performance, and customer satisfaction**.
